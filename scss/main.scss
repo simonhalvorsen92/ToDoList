@@ -1,0 +1,38 @@
+@use "mixins";
+
+header {
+  nav {
+    background-color: green;
+
+    ul {
+      @include mixins.listStyle(row);
+
+      li {
+        color: grey;
+      }
+    }
+
+    @include mixins.tablets() {
+      background-color: purple;
+    }
+
+    @include mixins.desktop() {
+      background-color: red;
+      padding: 3em;
+    }
+  }
+}
+
+main {
+  background-color: yellow;
+
+  ul {
+    @include mixins.listStyle(column);
+
+    @include mixins.desktop() {
+      li {
+        color: blue;
+      }
+    }
+  }
+}

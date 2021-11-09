@@ -1,0 +1,38 @@
+header nav {
+  background-color: green;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+header nav ul li {
+  color: grey;
+}
+@media screen and (min-width: 768px) {
+  header nav {
+    background-color: purple;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header nav {
+    background-color: red;
+    padding: 3em;
+  }
+}
+
+main {
+  background-color: yellow;
+}
+main ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  main ul li {
+    color: blue;
+  }
+}
