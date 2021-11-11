@@ -1,38 +1,55 @@
-@use "mixins";
+body {
+  margin: 0;
+  padding: 0;
 
-header {
-  nav {
-    background-color: green;
+  header {
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+    width: 100%;
+    height: 15vh;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: grey;
+    width: 100%;
+    height: 70vh;
 
-    ul {
-      @include mixins.listStyle(row);
+    .container {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      width: 70%;
 
-      li {
-        color: grey;
+      background-color: rgb(255, 255, 255);
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 55%;
+        margin: 0;
+        box-shadow: 10px 10px 10px grey;
+        color: green;
+        background-color: rgb(228, 215, 215);
+        list-style-type: none;
+        padding: 10px;
+        font-size: 1em;
+        line-height: 30px;
+
+        .done {
+          color: red;
+          text-decoration: line-through;
+        }
       }
-    }
-
-    @include mixins.tablets() {
-      background-color: purple;
-    }
-
-    @include mixins.desktop() {
-      background-color: red;
-      padding: 3em;
     }
   }
-}
-
-main {
-  background-color: yellow;
-
-  ul {
-    @include mixins.listStyle(column);
-
-    @include mixins.desktop() {
-      li {
-        color: blue;
-      }
-    }
+  footer {
+    background-color: cadetblue;
+    width: 100%;
+    height: 15vh;
   }
 }

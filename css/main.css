@@ -1,38 +1,51 @@
-header nav {
-  background-color: green;
+body {
+  margin: 0;
+  padding: 0;
 }
-header nav ul {
-  list-style: none;
+body header {
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+  justify-content: center;
+  background-color: cadetblue;
+  width: 100%;
+  height: 15vh;
+  font-size: 12pt;
 }
-header nav ul li {
-  color: grey;
-}
-@media screen and (min-width: 768px) {
-  header nav {
-    background-color: purple;
-  }
-}
-@media screen and (min-width: 1024px) {
-  header nav {
-    background-color: red;
-    padding: 3em;
-  }
-}
-
-main {
-  background-color: yellow;
-}
-main ul {
-  list-style: none;
+body main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  text-align: center;
+  background-color: grey;
+  width: 100%;
+  height: 70vh;
+}
+body main .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  width: 70%;
+  background-color: white;
+}
+body main .container ul {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  margin: 0;
+  box-shadow: 10px 10px 10px grey;
+  color: green;
+  background-color: #e4d7d7;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 1em;
+  line-height: 30px;
 }
-@media screen and (min-width: 1024px) {
-  main ul li {
-    color: blue;
-  }
+body main .container ul .done {
+  color: red;
+  text-decoration: line-through;
+}
+body footer {
+  background-color: cadetblue;
+  width: 100%;
+  height: 15vh;
 }
