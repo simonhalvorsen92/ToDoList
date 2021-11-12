@@ -54,7 +54,7 @@ let newUl = document.createElement("ul");
 
 createHtml()
 
-createHtml()
+
 
 // document.body.appendChild(newUl);
 
