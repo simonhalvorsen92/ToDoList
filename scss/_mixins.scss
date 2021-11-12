@@ -1,0 +1,12 @@
+// @mixin listStyle($orientation) {
+//   list-style: none;
+//   display: flex;
+//   justify-content: space-evenly;
+//   flex-direction: $orientation;
+// }
+
+@mixin desktop() {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
