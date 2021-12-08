@@ -7,10 +7,6 @@ class ToDo {
     }
 } 
 
-  
-
-
-
 let milk = new ToDo ("mjölk");
 let banan = new ToDo ("banan");
 let coffee = new ToDo ("kaffe");// ToDo = class
