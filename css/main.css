@@ -27,7 +27,7 @@ body main .container {
 }
 @media screen and (min-width: 1024px) {
   body main .container {
-    background-color: red;
+    background-color: #ffbdbd;
   }
 }
 body main .container ul {
@@ -46,12 +46,12 @@ body main .container ul {
 }
 @media screen and (min-width: 1024px) {
   body main .container ul {
-    background-color: #423c3c;
+    background-color: white;
     font-size: 2em;
     gap: 10px;
   }
   body main .container ul li {
-    border: 5px solid #9e7979;
+    border: 5px solid black;
     width: 100px;
   }
 }
